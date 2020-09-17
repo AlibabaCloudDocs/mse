@@ -134,7 +134,7 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
 
     ![无状态-查看 YAML](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/9730698951/p99783.png)
 
-4.  在**编辑 YAML**对话框中将以下 annotations 添加到**spec** \> **template** \> **metadata** ，并单击**更新**。
+4.  在**编辑 YAML**对话框中将以下annotations添加到**spec** \> **template** \> **metadata** ，并单击**更新**。
 
     ```
     annotations:
