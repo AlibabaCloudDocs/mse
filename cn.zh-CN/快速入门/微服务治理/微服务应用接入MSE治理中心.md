@@ -12,8 +12,8 @@
 1.  [在ACK中安装MSE治理中心组件](#section_h93_vhn_6ss)。
 2.  [为ACK授予MSE治理中心的访问权限](#section_7xx_blp_06o)。
 3.  为微服务应用开启MSE微服务治理。
-    -   [在创建新应用时开启MSE微服务治理](#section_07c_hhu_i9c)
-    -   [为已有应用开启MSE微服务治理](#section_v96_o5d_zaa)
+    -   [在创建新应用时开启MSE微服务治理](#section_07c_hhu_i9c)。
+    -   [为已有应用开启MSE微服务治理](#section_v96_o5d_zaa)。
 
 ## 在ACK中安装MSE治理中心组件
 
