@@ -145,5 +145,5 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
     **说明：** 需要将`<your-deployment-name>`替换为您实际使用的应用名称。
 
 
-完成上述步骤后，您就为部署在容器服务Kubernetes版中的应用开启了MSE微服务治理。登录[MSE治理中心控制台](http://edasmsc.console.aliyun.com)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo服务进行服务治理。
+完成上述步骤后，您就为部署在容器服务Kubernetes版中的应用开启了MSE微服务治理。登录[MSE治理中心控制台](http://edasmsc.console.aliyun.com)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo服务进行服务治理，详情请参见[使用指引](/cn.zh-CN/.md)。
 
