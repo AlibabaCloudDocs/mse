@@ -70,7 +70,7 @@ MSE Agent下载成功后需要进行解压和安装。
 
 ## 验证应用已接入MSE
 
-1.  登录[MSE管理控制台](https://mse.console.aliyun.com)。
+1.  登录[MSE治理中心控制台](https://mse.console.aliyun.com/#/msc/home)。
 
 2.  在左侧导航栏选择**微服务治理中心** \> **应用列表**。
 
@@ -79,5 +79,5 @@ MSE Agent下载成功后需要进行解压和安装。
 4.  在**应用列表**页面查看您的应用是否已接入MSE。
 
 
-完成上述步骤后，您就为部署在ECS以及非阿里云虚拟机等部署环境的应用开启了MSE微服务治理能力。登录[MSE治理中心控制台](http://edasmsc.console.aliyun.com)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo应用进行服务治理，详情请参见[使用指引](/cn.zh-CN/.md)。
+完成上述步骤后，您就为部署在ECS以及非阿里云虚拟机等部署环境的应用开启了MSE微服务治理能力。登录[MSE治理中心控制台](https://mse.console.aliyun.com/#/msc/home)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo应用进行服务治理，详情请参见[使用指引](/cn.zh-CN/.md)。
 
