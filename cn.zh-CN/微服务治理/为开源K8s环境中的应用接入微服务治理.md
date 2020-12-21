@@ -27,7 +27,8 @@ MSE微服务治理目前仅支持无状态（Deployment）的应用接入。
     **说明：** 请确保执行命令之前，您已经将~/.kube/config文件内容替换成需要接入MSE微服务治理的K8s集群的配置。
 
     ```
-    helm install ./mse-pilot-unmanaged --namespace mse-pilot                        
+    kubectl create namespace mse-pilot
+    helm install mse-pilot ./mse-pilot-unmanaged --namespace mse-pilot                        
     ```
 
 
