@@ -63,8 +63,6 @@ keyword: [本地联调, 使用本地注册中心]
 
 4.  在**Accounts**对话框中设置**AccessKey ID**和**AccessKey Secret**，然后单击**OK**。
 
-    如果您使用RAM用户的AccessKey ID和AccessKey Secret，请确认该RAM用户至少拥有**部署应用**的权限，具体操作，请参见[为RAM用户授权](/cn.zh-CN/用户管理/为RAM用户授权.md)。
-
     ![Accounts](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0495552061/p133860.png)
 
     关于阿里云账号说明如下：
