@@ -74,7 +74,7 @@ keyword: [微服务, 服务发现, ZooKeeper]
 
 6.  （可选）配置**公网带宽**。
 
-    如果您购买的实例需要通过公网访问，请添加公网流量。具体费用，请参见[公网费用](/cn.zh-CN/产品定价/微服务注册配置中心/公网费用.md)。
+    如果您购买的实例需要通过公网访问，请添加公网流量。具体费用，请参见[公网费用](/cn.zh-CN/产品定价/微服务注册配置中心/价格说明.md)。
 
     ![mse公网带宽](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8514229061/p207149.png)
 
