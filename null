@@ -2,49 +2,47 @@
 keyword: [微服务, 服务发现, Nacos, ZooKeeper, Eureka]
 ---
 
-# 实例管理
+# 设置白名单
 
-实例创建成功后，您可以查看实例状态、信息和修改实例名称，在不使用时释放实例。
+在MSE上创建公网实例完成后，您还需要为其设置白名单，以便该实例能够从公网访问。
 
 -   [开通MSE](https://www.aliyun.com/product/mse)
 -   [创建MSE实例](/cn.zh-CN/快速入门/微服务注册配置中心/购买并构建ZooKeeper引擎.md)
 
-## 查看实例
-
 1.  登录[MSE管理控制台](https://mse.console.aliyun.com)。
+
 2.  在左侧导航栏选择**注册配置中心** \> **实例列表**。
-3.  在实例列表页面选择目标MSE实例，单击**操作**列下方的**管理**。
-4.  在基础信息页面查看实例的基础信息、运行状态和实例节点的状态。
 
-    ![MSE实例查看](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3991309951/p51180.png)
+3.  在实例列表页面单击具体实例名称。
 
+4.  在基础信息页面单击**白名单设置**所在行的编辑按钮![编辑图标](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5991309951/p53717.png)。
 
-## 修改实例名称
+5.  在白名单设置区域下方的文本框中，输入允许访问该实例的公网IP地址段，并单击**确认**。
 
-在创建实例时，MSE自动生成了实例名称。在后续使用时，为了方便识别，建议您修改实例名称。
+    -   如果白名单配置内容为空，表示本地所有地址均可访问该实例。
+    -   如果填写了公网IP地址及掩码，表示仅允许所设置的公网IP地址或地址段访问该实例。
 
-1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
-2.  在实例列表页面的**操作**列单击**管理**。
-3.  在基础信息页面单击**实例名称**所在行的编辑按钮![MSE修改图标](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3991309951/p51188.png)。
-4.  输入实例名称，单击**确定**。
+        白名单公网IP地址格式：X.X.X.X/X，斜杠后为掩码。MSE默认设置为127.0.0.1/32，表示禁止所有地址的访问。在设置时请删掉IP地址。
 
-## 重启实例
+        白名单允许配置多个公网IP地址或地址段，每个地址或地址段之间用英文逗号（,）分隔。子网掩码范围为1~32，主机位必须为0。
 
-在实例出现问题，或者修改了引擎实例参数后，需要重启实例。
+    公网IP地址查询方法：
 
-1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
-2.  在实例列表页面的**操作**列单击**管理**。
-3.  在基础信息页面上方单击**重启实例**。
-4.  在弹出的确认对话框中，单击**确认**。
+    -   `curl ipinfo.io`
+    -   `curl ip.cn`
+    -   `curl cip.cc`
+    -   `curl ifconfig.me`
+    -   `curl myip.ipip.net`
+    举例：
 
-## 释放实例
+    例如使用`curl cip.cc`查询您的公网IP地址如下图所示。
 
-**说明：**
+    ![查询结果-公网IP地址。](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5991309951/p75849.png)
 
--   仅按量付费模式的实例支持手动释放实例。
--   实例释放后，该实例将会被删除，其数据均被删除，请谨慎操作。
+    在MSE实例中将查询到的公网IP地址配置白名单。
 
-1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
-2.  在实例列表页面的**操作**列单击![升级](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6991309951/p143806.png)，选择**释放实例**。
-3.  在弹出的对话框中单击**确定**。
+    ![配置MSE实例白名单](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5991309951/p75854.png)
+
+    配置完成后，您便可通过公网IP地址访问该实例。
+
 
