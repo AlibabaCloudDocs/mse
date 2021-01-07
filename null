@@ -1,0 +1,47 @@
+---
+keyword: [微服务, 服务发现, Nacos]
+---
+
+# 管理命名空间（Nacos）
+
+在具体地域（Region）中，命名空间用于实现资源和服务的隔离。当您对资源有较高的安全要求时，需要创建命名空间。
+
+## 创建命名空间
+
+1.  登录[MSE管理控制台](https://mse.console.aliyun.com)。
+
+2.  在左侧导航栏选择**注册配置中心** \> **实例列表**。
+
+3.  在实例列表页单击已创建的MSE实例ID/名称。
+
+4.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
+
+    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
+
+5.  在命名空间页单击**创建命名空间**，并在弹出的创建命名空间对话框中设置命名空间名称和描述信息，并单击**保存**。
+
+
+## 查看命名空间
+
+1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
+
+2.  在实例列表页单击已创建的MSE实例ID/名称。
+
+3.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
+
+    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
+
+
+## 编辑命名空间
+
+1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
+
+2.  在实例列表页单击已创建的MSE实例ID/名称。
+
+3.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
+
+    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
+
+4.  单击**操作**列的**编辑**修改命名空间信息。
+
+
