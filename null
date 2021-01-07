@@ -1,47 +1,50 @@
 ---
-keyword: [微服务, 服务发现, Nacos]
+keyword: [微服务, 服务发现, Nacos, ZooKeeper, Eureka]
 ---
 
-# 管理命名空间（Nacos）
+# 实例管理
 
-在具体地域（Region）中，命名空间用于实现资源和服务的隔离。当您对资源有较高的安全要求时，需要创建命名空间。
+实例创建成功后，您可以查看实例状态、信息和修改实例名称，在不使用时释放实例。
 
-## 创建命名空间
+-   [开通MSE](https://www.aliyun.com/product/mse)
+-   [创建MSE实例](/cn.zh-CN/快速入门/微服务注册配置中心/购买并构建ZooKeeper引擎.md)
+
+## 查看实例
 
 1.  登录[MSE管理控制台](https://mse.console.aliyun.com)。
-
 2.  在左侧导航栏选择**注册配置中心** \> **实例列表**。
+3.  在实例列表页面选择目标MSE实例，单击**操作**列下方的**管理**。
+4.  在基础信息页面查看实例的基础信息、运行状态和实例节点的状态。
 
-3.  在实例列表页单击已创建的MSE实例ID/名称。
-
-4.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
-
-    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
-
-5.  在命名空间页单击**创建命名空间**，并在弹出的创建命名空间对话框中设置命名空间名称和描述信息，并单击**保存**。
+    ![MSE实例查看](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3991309951/p51180.png)
 
 
-## 查看命名空间
+## 修改实例名称
+
+在创建实例时，MSE自动生成了实例名称。在后续使用时，为了方便识别，建议您修改实例名称。
 
 1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
+2.  在实例列表页面的**操作**列单击**管理**。
+3.  在基础信息页面单击**实例名称**所在行的编辑按钮![MSE修改图标](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3991309951/p51188.png)。
+4.  输入实例名称，单击**确定**。
 
-2.  在实例列表页单击已创建的MSE实例ID/名称。
+## 重启实例
 
-3.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
-
-    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
-
-
-## 编辑命名空间
+在实例出现问题，或者修改了引擎实例参数后，需要重启实例。
 
 1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
+2.  在实例列表页面的**操作**列单击**管理**。
+3.  在基础信息页面上方单击**重启实例**。
+4.  在弹出的确认对话框中，单击**确认**。
 
-2.  在实例列表页单击已创建的MSE实例ID/名称。
+## 释放实例
 
-3.  在MSE**实例详情**页面左侧导航栏单击**命名空间**。
+**说明：**
 
-    ![MSE命名空间管理界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8991309951/p66756.png)
+-   仅按量付费模式的实例支持手动释放实例。
+-   实例释放后，该实例将会被删除，其数据均被删除，请谨慎操作。
 
-4.  单击**操作**列的**编辑**修改命名空间信息。
-
+1.  登录[MSE注册中心控制台](https://mse.console.aliyun.com)。
+2.  在实例列表页面的**操作**列单击![升级](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6991309951/p143806.png)，选择**释放实例**。
+3.  在弹出的对话框中单击**确定**。
 
