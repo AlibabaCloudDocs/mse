@@ -69,9 +69,10 @@ MSE微服务治理目前仅支持无状态（Deployment）的应用接入。
     kubectl edit deployment {Deployment名称} -o yaml                        
     ```
 
-3.  在YAML文件中的spec -\> template -\> metadata -\> labels层级下加入以下内容。
+3.  在YAML文件中的spec -\> template -\> metadata -\> annotations层级下加入以下内容。
 
     ```
+    msePilotAutoEnable: "on"
     msePilotLicenseKey: xxx
     msePilotCreateAppName: xxx                           
     ```
