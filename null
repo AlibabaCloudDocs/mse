@@ -1,47 +1,70 @@
-# MSE服务测试授权
+---
+keyword: [RAM角色, 服务关联角色]
+---
 
-服务测试功能需要创建一个服务消费者，调用您VPC中的服务提供者，从而测试服务提供者。本文介绍如何在RAM控制台对RAM用户授予这些操作的权限。
+# MSE服务关联角色
 
-## 创建测试服务的自定义权限策略并为RAM用户授权
+本文介绍MSE服务关联角色AliyunServiceRoleForMSE以及如何删除该角色。
 
-RAM用户要测试服务，需要mse:TestService权限。
+MSE服务关联角色AliyunServiceRoleForMSE是MSE在某些情况下，为了完成自身的某个功能，需要获取其他云服务的访问权限而提供的RAM角色。更多关于服务关联角色的信息请参见[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)。
 
-1.  在左侧导航栏选择**权限管理** \> **权限策略管理** 。
+## AliyunServiceRoleForMSE应用场景
 
-2.  在**权限策略管理**页面单击**创建权限策略**。
+MSE需要访问[云服务器ECS](/cn.zh-CN/产品简介/什么是云服务器ECS.md)和[专有网络VPC](/cn.zh-CN/产品简介/什么是专有网络.md)云服务的资源时，可通过自动创建的MSE服务关联角色AliyunServiceRoleForMSE获取访问权限。
 
-3.  在**新建自定义权限策略**页面配置相关参数，然后单击**确定**。
+## AliyunServiceRoleForMSE权限说明
 
-    ![新建自定义权限策略](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3368101061/p170288.png)
+AliyunServiceRoleForMSE具备以下云服务的访问权限：
 
-    |参数|描述|
-    |--|--|
-    |**策略名称**|输入策略名称。|
-    |**备注**|输入策略备注信息。|
-    |**配置模式**|选择**脚本配置**。|
-    |**策略内容**|输入测试服务的自定义权限策略。|
 
-    测试服务的自定义权限策略内容如下：
 
-    ```
-    {
-        "Statement": [
-            {
-                "Action": [
-                    "mse:TestService"
-                ],
-                "Effect": "Allow",
-                "Resource": [
-                    "acs:mse:$regionid:*:application/$applicationId"  
-                ]
+## 删除AliyunServiceRoleForMSE
+
+如果您使用了MSE功能，然后需要删除MSE服务关联角色AliyunServiceRoleForMSE，例如出于安全考虑，需要删除该角色，则需要先明确删除后的影响：删除AliyunServiceRoleForMSE后，无法使用服务测试、服务压测功能。
+
+删除AliyunServiceRoleForMSE的操作步骤如下：
+
+1.  使用云账号（主账号）登录[RAM控制台](http://ram.console.aliyun.com)，在左侧导航栏中单击**RAM角色管理**。
+
+2.  在RAM角色管理页面**创建RAM角色**右侧的搜索框中，输入**AliyunServiceRoleForMSE**，自动搜索到MSE的服务关联角色AliyunServiceRoleForMSE。
+
+3.  在AliyunServiceRoleForMSE的**操作**列单击**删除**。
+
+4.  在删除RAM角色对话框，单击**确定**。
+
+
+## 常见问题
+
+为什么我的RAM用户无法自动创建MSE服务关联角色AliyunServiceRoleForMSE？
+
+您需要拥有指定的权限，才能自动创建或删除AliyunServiceRoleForMSE。因此，在RAM用户无法自动创建AliyunServiceRoleForMSE时，您需为其添加以下权限策略。
+
+```
+{
+    "Statement": [
+        {
+            "Action": [
+                "ram:CreateServiceLinkedRole"
+            ],
+            "Resource": "acs:ram:*:主账号ID:role/*",
+            "Effect": "Allow",
+            "Condition": {
+                "StringEquals": {
+                    "ram:ServiceName": [
+                        "mse.aliyuncs.com"
+                    ]
+                }
             }
-        ],
-        "Version": "1"
-    }
-    ```
+        }
+    ],
+    "Version": "1"
+}
+```
 
-    **说明：** $regionid和$applicationId请替换为实际的地域和应用。如果要测试所有地域和应用的服务，将$regionid和$applicationId替换为星号（\*）即可。（\*）表示用户ID，若不涉及跨账号授权，一般默认即可。
+**说明：** 请将`主账号ID`替换为您实际的阿里云账号（主账号）ID。
 
-4.  为RAM用户授权创建的测试服务的自定义权限，详情请参见[为RAM用户授权](https://help.aliyun.com/document_detail/121945.html?spm=a2c4g.11186623.2.20.4e657876lnNB00#task-187800)。
+**相关文档**  
 
+
+[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)
 
