@@ -20,7 +20,8 @@ keyword: [微服务, 服务发现, Eureka]
 
     -   未开通MSE集群托管
         1.  登录[MSE产品页](https://www.aliyun.com/product/mse)。
-        2.  选择您需要创建的MSE实例，例如**ZooKeeper**、**Eureka**和**Nacos**。
+        2.  在MSE产品页单击**超值资源包**。
+        3.  选择您需要创建的MSE实例，例如**ZooKeeper**、**Eureka**和**Nacos**。
 
             进入MSE实例创建及购买页面。
 
