@@ -20,7 +20,7 @@ keyword: [微服务, 服务治理]
 
 4.  在**创建场景**面板中设置**场景配置**和**压力配置**相关参数，然后单击**确定**。
 
-    ![dubbo](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3687615061/p181904.png)
+    ![dubbo](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8346152161/p181904.png)
 
     **场景配置**相关参数说明如下。
 
@@ -31,7 +31,8 @@ keyword: [微服务, 服务治理]
     |**框架类型**|选择**Dubbo**框架。|
     |**服务**|选择应用的服务。|
     |**方法**|选择服务的方法。|
-    |**请求参数**|设置请求参数。关于Dubbo服务的方法参数类型及配置方式，请参见[Dubbo参考示例](#dubbo)。|
+    |**参数模式**|选择请求参数输入模式。    -   参数填写：填写参数内容。关于参数填写格式，请参见[Dubbo参考示例](#dubbo)和[参数文件URL](#section_lz2_xgk_r22)。
+    -   参数文件路径：填写参数文件地址。参数文件路径必须支持公网可访问。 |
     |**超时时间（毫秒）**|设置超时时间，单位：毫秒。|
     |**直连服务**|开启后选择**服务地址**，可直接连接该服务。|
     |**打印日志**|开启可自动打印日志信息，但会影响到服务压测性能，建议正常压测时关闭。|
@@ -104,9 +105,36 @@ keyword: [微服务, 服务治理]
 |String helloBoolean\(boolean helloBoolean1, boolean helloBoolean2\);|\["boolean","boolean"\]|\["true","false"\]|
 |String helloVoid\(\);|\[\]|\[\]|
 
+## 参数文件URL：提供一个公网可下载的文件地址
+
+平台会把该参数文件分发到每一个施压机，应用每一次调用参数就在该文件中按顺序读取一行。文件里面也支持动态函数参数。
+
+参数文件填写格式如下：
+
+-   方法参数类型：填写的内容是一个字符串类型的JSON数组，数组的每一位代表对应位置的参数类型。除了Java基本类型，其余类型需要填写完整的类路径。
+-   方法参数：填写的内容是一个字符串类型的JSON数组，数组的每一位代表对应位置的参数。
+
+|方法|参数类型填写方式|参数文件内容填写格式|
+|--|--------|----------|
+|String sayHello\(String name\);|\["java.lang.String"\]|\["hello, dubbo"\]
+
+\["hello, dubbo"\]
+
+\["hello, dubbo"\] |
+|String helloList\(List helloList\);|\["java.util.List"\]|\[\[1\]\]
+
+\[\[1\]\]
+
+\[\[1\]\] |
+|String helloList\(List helloList1, List helloList2\);|\["java.util.List","java.util.List"\]|\[\[1\],\[1,2\]\]
+
+\[\[1\],\[1,2\]\]
+
+\[\[1\],\[1,2\]\] |
+
 ## 微服务测试用户交流群
 
 如果您在微服务引擎MSE使用微服务测试过程中有任何疑问，欢迎您使用钉钉扫描下方的二维码或搜索钉钉群号31180380加入钉钉群进行反馈。
 
-![微服务测试交流群](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4652805061/p181621.png)
+![微服务测试交流群](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9780389061/p181621.png)
 
