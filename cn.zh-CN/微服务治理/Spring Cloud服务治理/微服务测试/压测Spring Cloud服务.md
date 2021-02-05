@@ -20,7 +20,7 @@ keyword: [微服务, 服务治理, 服务压测]
 
 4.  在**创建场景**面板中设置**场景配置**和**压力配置**相关参数，然后单击**确定**。
 
-    ![springcloud](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6174715061/p181890.png)
+    ![springcloud](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0935152161/p181890.png)
 
     **场景配置**页签相关参数说明如下。
 
@@ -32,6 +32,8 @@ keyword: [微服务, 服务治理, 服务压测]
     |**Path**|设置HTTP相对路径，例如/getIp。|
     |**基本信息**|设置请求方式，包括GET/POST/PUT/DELETE。**说明：** GET和DELETE只支持修改URL的Path路径。POST和PUT支持ContentType及参数编写格式。 |
     |**请求头**|设置请求头参数信息。关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#springcloud)。|
+    |**参数模式**|选择请求参数输入模式。    -   参数填写：填写参数内容。关于参数填写格式，请参见[参数文件URL](#section_o9b_esw_e68)。
+    -   参数文件路径：填写参数文件地址。参数文件路径必须支持公网可访问。 |
     |**超时时间**|设置超时时长，单位：毫秒。|
     |**直连服务**|开启后选择**服务地址**，可直接连接该服务。|
     |**打印日志**|开启可自动打印日志信息，但会影响到服务压测性能，建议正常压测时关闭。|
@@ -92,9 +94,31 @@ keyword: [微服务, 服务治理, 服务压测]
 |application/x-www-form-urlencoded|\[\{"name": "cart"\},\{"age": 20\}\]|
 |application/json（默认）|\{"name": "cart", "age": 20\}|
 
+## 参数文件URL：提供一个公网可下载的文件地址
+
+平台会把该参数文件分发到每一个施压机，应用每一次调用参数就在该文件中按顺序读取一行。文件里面也支持动态函数参数。
+
+参数文件填写格式如下：
+
+-   方法参数类型：填写的内容是一个字符串类型的JSON数组，数组的每一位代表对应位置的参数类型。除了Java基本类型，其余类型需要填写完整的类路径。
+-   方法参数：填写的内容是一个字符串类型的JSON数组，数组的每一位代表对应位置的参数。
+
+|参数编写格式|参数文件内容编写格式|
+|------|----------|
+|application/x-www-form-urlencoded|\[\{"name": "cart"\},\{"age": 20\}\]
+
+\[\{"name": "cart"\},\{"age": 20\}\]
+
+\[\{"name": "cart"\},\{"age": 20\}\] |
+|application/json|\{"name": "cart", "age": 20\}
+
+\{"name": "cart", "age": 20\}
+
+\{"name": "cart", "age": 20\} |
+
 ## 微服务测试用户交流群
 
 如果您在微服务引擎MSE使用微服务测试过程中有任何疑问，欢迎您使用钉钉扫描下方的二维码或搜索钉钉群号31180380加入钉钉群进行反馈。
 
-![微服务测试交流群](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4652805061/p181621.png)
+![微服务测试交流群](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9780389061/p181621.png)
 
