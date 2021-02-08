@@ -37,7 +37,10 @@
 |ErrorCode|String|MSE-100-000|错误码。 |
 |Message|String|请求处理成功|信息。 |
 |RequestId|String|AF21683A-29C7-4853-AC0F-B5ADEE4\*\*\*\*|请求ID。 |
-|Success|Boolean|true|请求结果。 |
+|Success|Boolean|true|请求结果，取值如下：
+
+ -   `true`：请求成功。
+-   `false`：请求失败。 |
 
 ## 示例
 
