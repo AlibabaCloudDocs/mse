@@ -24,7 +24,10 @@
 |PageNumber|Integer|1|页码。 |
 |PageSize|Integer|10|每页展示实例数。 |
 |RequestId|String|25EA0A83-9007-4E87-808C-637BE1A\*\*\*\*|请求ID。 |
-|Success|Boolean|true|请求结果。 |
+|Success|Boolean|true|请求结果，取值如下：
+
+ -   `true`：请求成功。
+-   `false`：请求失败。 |
 |TotalCount|Integer|12|实例总数。 |
 
 ## 示例
