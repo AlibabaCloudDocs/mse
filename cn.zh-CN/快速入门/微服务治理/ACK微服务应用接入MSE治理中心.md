@@ -27,7 +27,7 @@
 
     **命名空间**、**发布名称**和**当前版本**均为默认配置，无需更改。
 
-    ![ACK-微服务治理-安装Pilot](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/1123130061/p167162.png)
+    ![ACK-微服务治理-安装Pilot](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1123130061/p167162.png)
 
 4.  在**安装**对话框中确认目标集群无误后，单击**确定**。
 
@@ -48,15 +48,15 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
 
 5.  在**集群资源**页签中单击**Worker RAM角色**右侧的链接。
 
-    ![基本信息-Worker RAM 角色](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8730698951/p99694.png)
+    ![基本信息-Worker RAM 角色](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8730698951/p99694.png)
 
 6.  在RAM访问控制的**RAM角色管理**页面的**权限管理**页签单击目标权限策略名称链接。
 
-    ![RAM角色管理](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8730698951/p99692.png)
+    ![RAM角色管理](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8730698951/p99692.png)
 
 7.  在目标角色的**权限策略管理**的页面的**策略内容**页签下方单击**修改策略内容**，并在右侧的**修改策略内容**面板中将以下内容添加到策略内容中，单击**确定**。
 
-    ![修改策略内容](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8730698951/p99695.png)
+    ![修改策略内容](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8730698951/p99695.png)
 
     ```
     {
@@ -77,7 +77,7 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
 
 3.  在集群左侧导航栏单击**工作负载**，然后在页面左上角选择**命名空间**，单击**无状态**，在右上角单击**使用模板创建**。
 
-    ![工作负载](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/3644132061/p100159.png)
+    ![工作负载](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3644132061/p100159.png)
 
 4.  在**使用模板创建**页面上选择**示例模板**，并在**模板**中将以下`annotations`添加到**spec** \> **template** \> **metadata**层级下，然后单击**创建**。
 
@@ -134,7 +134,7 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
 
 3.  在集群左侧导航栏单击**工作负载**，然后在页面右上角选择**命名空间**，单击**无状态**，并在目标应用的**操作**列中单击**更多**，在列表中单击**查看Yaml**。
 
-    ![无状态-查看 YAML](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8864132061/p99783.png)
+    ![无状态-查看 YAML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8864132061/p99783.png)
 
 4.  在**编辑 YAML**对话框中将以下annotations添加到**spec** \> **template** \> **metadata** ，并单击**更新**。
 
@@ -147,5 +147,5 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
     **说明：** 需要将`<your-deployment-name>`替换为您实际使用的应用名称。
 
 
-完成上述步骤后，您就为部署在容器服务Kubernetes版中的应用开启了MSE微服务治理。登录[MSE治理中心控制台](http://edasmsc.console.aliyun.com)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo应用进行服务治理，详情请参见[使用指引](/cn.zh-CN/.md)。
+完成上述步骤后，您就为部署在容器服务Kubernetes版中的应用开启了MSE微服务治理。登录[MSE治理中心控制台](https://mse.console.aliyun.com/#/msc/home)，即可使用MSE微服务治理对您的Spring Cloud和Dubbo应用进行服务治理，详情请参见[使用指引](/cn.zh-CN/.md)。
 
