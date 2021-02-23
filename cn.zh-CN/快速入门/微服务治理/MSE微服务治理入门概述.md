@@ -12,7 +12,7 @@ keyword: [微服务, 服务治理]
 
     在ACK中安装MSE治理中心组件，并创建负载均衡实例。负载均衡实例是一个运行的负载均衡服务实体。
 
-    1.  [在ACK中安装MSE治理中心组件](section_h93_vhn_6ss)。
+    1.  [t1884235.md\#section\_h93\_vhn\_6ss](section_h93_vhn_6ss)。
     2.  [为ACK授予MSE治理中心的访问权限](section_7xx_blp_06o)。
     3.  为应用开启微服务治理。
         -   [在创建新应用时开启MSE微服务治理](section_07c_hhu_i9c)。
@@ -33,8 +33,8 @@ keyword: [微服务, 服务治理]
     |无损下线|[配置无损下线]()|[配置无损下线]()|
     |服务鉴权|[配置服务鉴权]()|[配置服务鉴权]()|
     |离群实例摘除|[摘除离群实例]()|[摘除离群实例]()|
-    |微服务测试|[测试Spring Cloud服务](/cn.zh-CN/用户指南/微服务治理/Spring Cloud服务治理/测试Spring Cloud服务.md)|[测试Dubbo服务](/cn.zh-CN/用户指南/微服务治理/Dubbo服务治理/测试Dubbo服务.md)|
-    |服务降级|[配置服务降级](/cn.zh-CN/用户指南/微服务治理/Spring Cloud服务治理/配置服务降级.md)|[配置服务降级](/cn.zh-CN/用户指南/微服务治理/Dubbo服务治理/配置服务降级.md)|
+    |微服务测试|[测试Spring Cloud服务](/cn.zh-CN/微服务治理/Spring Cloud服务治理/微服务测试/测试Spring Cloud服务.md)|[测试Dubbo服务](/cn.zh-CN/微服务治理/Dubbo服务治理/微服务测试/测试Dubbo服务.md)|
+    |服务降级|[配置服务降级](/cn.zh-CN/微服务治理/Spring Cloud服务治理/配置服务降级.md)|[配置服务降级](/cn.zh-CN/微服务治理/Dubbo服务治理/配置服务降级.md)|
 
     **说明：**
 
