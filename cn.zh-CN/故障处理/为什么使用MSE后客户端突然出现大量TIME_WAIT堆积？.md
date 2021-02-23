@@ -22,7 +22,7 @@
 
 **说明：** 在解决问题时，对于TIME\_WAIT还需要关注如下几个限制条件：
 
--   源端口数量\(net.ipv4.ip\_local\_port\_range\)
+-   源端口数量（net.ipv4.ip\_local\_port\_range）
 -   TIME\_WAIT bucket数量（net.ipv4.tcp\_max\_tw\_buckets）
 -   文件描述符数量（max open files）
 
