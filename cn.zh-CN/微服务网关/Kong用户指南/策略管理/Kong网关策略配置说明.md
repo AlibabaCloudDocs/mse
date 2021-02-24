@@ -11,7 +11,7 @@
 |属性|描述|
 |--|--|
 |name|路由的名称。|
-|protocols|允许的协议列表，默认值为http和https。|
+|protocols|允许的协议列表，默认值为HTTP和HTTPS。|
 |methods|允许的HTTP请求方法，默认值为GET和POST。|
 |hosts|匹配的域名列表。|
 |paths|配的路径列表。|
@@ -85,7 +85,7 @@
 |name|插件名称，固定为request-size-limiting。|
 |route|插件作用的目标，可以是route、service或者cosumer，此策略以route为例。如果不指定目标，则视为全局生效，作用到每个请求。 |
 |config.allowed\_payload\_size|允许的请求主体最大值（以兆字节为单位），默认为128。|
-|config.size\_unit|单位，默认值为megabytes，可设置为设置为bytes、kilobytes和megabytes。|
+|config.size\_unit|单位，默认值为megabytes，可设置为bytes、kilobytes和megabytes。|
 
 ## 流量控制-KONG\_RATE\_LIMIT
 
