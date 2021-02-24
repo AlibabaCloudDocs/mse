@@ -90,7 +90,7 @@ MSE微服务治理目前仅支持无状态（Deployment）的应用接入。
 
 ## 卸载mse-pilot
 
-当您不再需要需要治理开源K8s环境中的应用及服务时，可以卸载mse-pilot。
+当您不再需要治理开源K8s环境中的应用及服务时，可以卸载mse-pilot。
 
 1.  执行以下命令卸载mse-pilot。
 
