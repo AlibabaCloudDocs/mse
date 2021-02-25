@@ -27,7 +27,7 @@ keyword: [微服务, 服务治理, 服务巡检]
     |**框架类型**|支持Spring Cloud和Dubbo框架。系统会根据所选应用自动识别其框架，也可以手动选择**Spring Cloud**。|
     |**Path**|设置HTTP相对路径，例如/getIp。|
     |**基本信息**|设置请求方式，包括GET/POST/PUT/DELETE。**说明：** GET和DELETE只支持修改URL的Path路径。POST和PUT支持ContentType及参数编写格式。 |
-    |**请求头**|设置请求头参数信息。关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#springcloud参考示例)。|
+    |**请求头**|设置请求头参数信息。关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#section_hdt_8wi_8np)。|
     |**断言信息包含**|设置接口返回值信息。如果返回值含有一个特征，如返回值含有123，则格式为"123"；如果返回值含有多个特征，如同时含有123，abc，则格式为\["123","abc"\]。|
     |**巡检周期**|设置巡检周期，单位秒/分钟，可自定义选择。|
     |**报警触发条件**|当接口巡检异常时，告警触发的频率。|
