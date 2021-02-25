@@ -29,7 +29,7 @@ keyword: [微服务, 测试用例, 自动化回归]
     |**Path**|设置HTTP相对路径，例如/getIp。|
     |**基本信息**|设置请求方法和ContentType。请求方法包括GET/POST/PUT/DELETE，ContentType包括x-www-form-urlencoded和raw，不同得ContentType提供不同可视化的参数输入方式。    -   **x-www-form-urlencoded**：表单输入，传递的参数格式为\[\{"name": "cart"\},\{"age": 20\}\]。
     -   **raw**：默认为application/json JSON格式输入，传递的参数格式为\{"name": "cart", "age": 20\}。其他格式输入，传递的参数格式按输入文本的传输。
-关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#springcloud参考示例)。 |
+关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#section_c62_dw0_rds)。 |
     |**请求头**|设置请求头参数信息。|
     |**断言（选填）**|输入**检查对象**和**检查内容**，选择**检查条件**。|
     |**出参提取（选填）**|输入**出参名**和**解析表达式**。|
