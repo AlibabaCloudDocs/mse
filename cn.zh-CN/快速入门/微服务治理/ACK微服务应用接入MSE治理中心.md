@@ -56,17 +56,15 @@ ACK中的应用要使用MSE治理中心，需要为ACK授予MSE治理中心资�
 
 7.  在目标角色的**权限策略管理**的页面的**策略内容**页签下方单击**修改策略内容**，并在右侧的**修改策略内容**面板中将以下内容添加到策略内容中，单击**确定**。
 
-    ![修改策略内容](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8730698951/p99695.png)
+    ![修改策略内容](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5883394161/p99695.png)
 
     ```
     {
-    "Action":"mse:*",
-    "Resource": "*",
-    "Effect": "Allow"
+      "Action":"mse:CreateApplication",
+      "Resource":"*",
+      "Effect":"Allow"
     }
     ```
-
-    **说明：** 为保证YAML代码格式的正确性，需在这段代码前添加英文逗号。
 
 
 ## 在创建新应用时开启MSE微服务治理
