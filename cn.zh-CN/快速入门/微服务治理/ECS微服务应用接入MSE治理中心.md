@@ -65,7 +65,7 @@ MSE Agent下载成功后需要进行解压和安装。
     -Dmse.enable=true
     ```
 
-    **说明：** 安装java agent需要确保对应节点，至少预留300 M内存。
+    **说明：** 安装Java Agent需要确保对应节点，至少预留300 MB内存。
 
 
 ## 验证应用已接入MSE
