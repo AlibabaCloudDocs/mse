@@ -1,6 +1,6 @@
 # Spring Cloud Gateway网关策略配置说明
 
-微服务网关的Spring Cloud Gateway类型网关完全兼容开源Spring Cloud Gateway网关的所有策略，如路由、插件、客户端、熔断、负载均衡和限流等。为了帮助您更好的配置策略，本文对该网关的各种策略配置进行说明。
+微服务网关的Spring Cloud Gateway类型网关完全兼容开源Spring Cloud Gateway网关的所有策略，如路由、插件、客户端、熔断、负载均衡和限流等。为了帮助您更好地配置策略，本文对该网关的各种策略配置进行说明。
 
 ## 路由-SCG\_ROUTE
 
@@ -88,7 +88,7 @@ Spring Cloud Gateway将路由作为Spring WebFlux基础架构的一部分进行�
 |burst-capacity-header|允许用户每秒钟内执行的最大请求数。当此值设置为零时表示阻止所有请求。|
 |remaining-header|剩余消息固定头部。|
 |replenish-rate-header|允许用户每秒发送的请求数。|
-|requested-token-header|允许用户每个请求从存储桶中提取的令牌数。|
+|requested-tokens-header|允许用户每个请求从存储桶中提取的令牌数。|
 
 ## 负载均衡-SCG\_RIBBON
 
@@ -99,7 +99,7 @@ Ribbon策略是客户端负载平衡器，可让您对HTTP和TCP客户端的行�
 |属性|描述|
 |--|--|
 |ribbon|RIBBON策略前缀。|
-|NIWSServerListClassName|ServerList该接口实现类。|
+|NIWSServerListClassName|ServerList接口实现类。|
 |listOfServers|服务后端节点。|
 |ConnectTimeout|建立连接所用的时间，默认1000，单位：ms。|
 |ReadTimeout|建立连接后从服务器读取到可用资源所用的时间，默认3000，单位：ms。|
