@@ -46,11 +46,11 @@
 
 4.  在**添加权限**页面选择**AliyunSLBReadOnlyAccess**权限，单击**确定**，然后单击**完成**。
 
-    ![添加权限](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0279309951/p139296.png)
+    ![添加权限](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9372838161/p139296.png)
 
     |参数|描述|
     |--|--|
-    |**授权范围**|默认选择**云账号全部资源**，即阿里云账号的全部资源。|
+    |**授权应用范围**|默认选择**整个云账号**，即阿里云账号的全部资源。|
     |**被授权主体**|目标RAM用户，系统自动填入。|
     |**选择权限**|单击**系统策略**，从系统策略中选择**AliyunSLBReadOnlyAccess**。您可在搜索框输入SLB，通过关键字进行模糊搜索，提升查找效率。|
 
