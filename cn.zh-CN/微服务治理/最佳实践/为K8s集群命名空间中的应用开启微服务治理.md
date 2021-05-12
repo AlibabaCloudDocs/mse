@@ -46,7 +46,15 @@ keyword: [开启微服务治理, 命名空间]
 
     您的应用在重启之后，就会自动接入到MSE微服务治理中心，可以在**应用列表**页查看到，并进行相应的治理功能。
 
-    **说明：** 默认接入的应用名称为deployment的名称，如果您需要修改接入MSE的应用名称，可通过编辑应用YAML文件中的`msePilotCreateAppName`参数进行修改。
+    **说明：** 默认接入的应用名称为deployment的名称，如果您需要修改接入MSE的应用名称，可通过编辑应用的YAML文件进行修改。
+
+    ```
+    spec:
+      template:
+        metadata:
+          annotations:
+            msePilotCreateAppName:"<yourAppName>"   //替换为您实际使用的应用名称。
+    ```
 
 7.  在**集群详情**页面命名空间列表区域，单击目标命名空间**操作**列下的**关闭微服务治理**。
 
