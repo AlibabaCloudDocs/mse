@@ -7,34 +7,17 @@
 
 为部署在容器服务Kubernetes版中的应用安装MSE微服务治理组件，您无需修改任何代码，就能借助MSE对应用进行微服务治理。MSE微服务治理的详细信息请参见[微服务治理中心入门概述]()。
 
-## 在容器服务Kubernetes版中安装MSE微服务治理组件
+## 在ASM安装MSE微服务治理组件
 
-在ACK中为目标集群安装MSE应用监控组件**ack-mse-rule-controller**，在该集群部署的应用即可接入MSE治理中心。
+1.  登录[ASM控制台](https://servicemesh.console.aliyun.com)。
 
-1.  登录[容器服务控制台](https://cs.console.aliyun.com)。
+2.  在左侧导航栏选择**服务网格** \> **网格管理**
 
-2.  在左侧导航栏选择**市场** \> **应用目录**。
+3.  在**网格管理**页面，找到待配置的实例，单击实例的名称或在**操作**列中单击**管理**。
 
-3.  在**应用目录**页面右上角的搜索框中输入mse，选择**ack-mse-rule-controller**组件。
+4.  在网关管理详情页面右上方单击**功能设置**。
 
-4.  在**应用目录 - ack-mse-rule-controller**页面选择**参数**页签，修改serviceMesh\_id，关于serviceMesh\_id的获取请参见[网格管理](https://servicemesh.console.aliyun.com/#/instances)。
-
-    关于MSE微服务治理组件参数配置说明如下。
-
-    |参数|描述|默认值|
-    |--|--|---|
-    |controller.region\_id|容器服务集群所在的区域，如cn-beijing，cn-hangzhou，cn-shenzhen等，目前MSE已经开通北京、深圳、杭州、上海、青岛五个区域。|自动注入您集群所在的区域。|
-    |controller.cluster\_id|容器服务集群ID|自动注入您的容器服务集群ID。|
-    |controller.uid|阿里云的用户ID|自动注入您的阿里云账户ID。|
-    |controller.accessKey|阿里云账号AccessKey|容器服务通过RAM work role方式授权。|
-    |controller.accessKeySecret|阿里云账号SecretKey|容器服务通过RAM work role方式授权。|
-    |controller.image|mse pilot镜像的下载地址|默认从您集群所在的Region下载镜像。|
-    |controller.serviceMesh\_id|容器服务集群的服务网格ID|开启服务网格后的服务网格ID。|
-    |controller.accessSource|接入的K8s集群的类型|容器服务K8s集群对应的类型为ACSK8s。|
-
-5.  在**应用目录 - ack-mse-rule-controller**页面中的右侧**创建**面板中选中目标**集群**，并单击**创建**。
-
-    ![创建ack-mse-rule-controller](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6878560061/p167801.png)
+5.  在**功能设置更新**面板单击**展开高级选项**，选中**启用MSE微服务治理组件**，然后单击**确定**。
 
 
 ## 在容器服务Kubernetes版中发布应用
