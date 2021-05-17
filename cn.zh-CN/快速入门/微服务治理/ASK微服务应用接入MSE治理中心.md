@@ -11,8 +11,8 @@
 1.  [在ASK集群中安装MSE微服务治理组件](#section_xs3_221_dpd)
 2.  [为ASK集群授予MSE治理中心的访问权限](#section_xfd_bxc_674)
 3.  为微服务应用开启MSE微服务治理。
-    -   [在创建新应用时开启MSE微服务治理](#section_0dh_za7_sms)
-    -   [为已有应用开启MSE微服务治理](#section_qh6_2kk_v94)
+    -   [在创建新应用时开启MSE微服务治理](#section_asc_whv_zpu)
+    -   [为已有应用开启MSE微服务治理](#section_9ms_mf0_gjy)
 
 ## 在ASK集群中安装MSE微服务治理组件
 
