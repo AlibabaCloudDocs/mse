@@ -74,7 +74,7 @@ ASK集群中的应用要使用MSE治理中心，需要为ASK集群授予MSE治�
 
 9.  在Pod详情页面，单击**查看Yaml**，在**编辑YAML**对话框中添加`k8s.aliyun.com/eci-ram-role-name: <刚刚创建的角色名>`到**spec** \> **template** \> **annotations**，并单击**更新**。
 
-    ![更新YAML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7181915161/p246484.png)
+    ![更新YAML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3717231261/p246484.png)
 
 
 ## 在创建新应用时开启MSE微服务治理
