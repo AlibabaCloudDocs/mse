@@ -8,9 +8,9 @@
 
 1.  登录[微服务网关控制台](https://microgw.console.aliyun.com)。
 
-2.  在左侧导航栏选择**网关管理**。
+2.  在顶部菜单栏选择地域。
 
-3.  在顶部菜单栏选择地域。
+3.  在左侧导航栏选择**网关管理**。
 
 4.  在**网关详情**页面左侧导航栏单击**API管理**。
 
@@ -18,9 +18,9 @@
 
 6.  在**API详情**页面左下角单击**保存并发布**。
 
-    **保存并发布**该API后，会触发API发布流程，在**发布详情**对话框中可以查看API发布的进度和状态。
+    保存并发布该API后，会触发API发布流程，在**发布详情**对话框中可以查看API发布的进度和状态。
 
-    ![API发布详情](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2065190061/p168882.png)
+    ![发布详情](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7009957061/p190850.png)
 
     返回**API管理**页面，该API的**运行状态**为**已发布**。
 
