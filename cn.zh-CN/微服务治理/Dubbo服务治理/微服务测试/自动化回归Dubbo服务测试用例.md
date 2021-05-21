@@ -22,7 +22,7 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 4.  在**新建用例**页面单击测试步骤中间空白处或右侧的![下拉箭头](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0389155061/p182521.png)，然后设置相关参数信息。
 
-    ![创建Dubbo测试用例](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9589155061/p182577.png)
+    ![创建Dubbo测试用例](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2273951261/p182577.png)
 
     |参数|描述|
     |--|--|
@@ -68,7 +68,7 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 6.  在**出参提取（选填）**下方的**出参提取表达式**中粘贴所选择的出参表达式，并自定义**出参名**。
 
-7.  单击**+添加下一步**增加多个测试步骤。
+7.  单击**添加下一步**增加多个测试步骤。
 
 8.  在该测试步骤的**基本信息**区域下方的**JSON格式化**中输入引用变量名$\{XXX\}。
 
