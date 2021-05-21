@@ -20,9 +20,9 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 3.  在顶部菜单栏选择**地域**，然后单击**创建用例**。
 
-4.  在**新建用例**页面单击测试步骤右侧的![下拉箭头](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0389155061/p182521.png)，然后设置相关参数信息。
+4.  在**创建用例**页面单击测试步骤右侧的![下拉箭头](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0389155061/p182521.png)，然后设置相关参数信息。
 
-    ![创建测试用例](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0389155061/p182525.png)
+    ![创建测试用例](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0373951261/p182525.png)
 
     |参数|描述|
     |--|--|
@@ -70,7 +70,7 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 6.  在**出参提取（选填）**下方的**出参提取表达式**中粘贴所选择的出参表达式，并自定义**出参名**。
 
-7.  单击**+添加下一步**增加多个测试步骤。
+7.  单击**添加下一步**增加多个测试步骤。
 
 8.  在该测试步骤的**基本信息**区域，**ConetntType**选中**raw**，在**JSON格式化**中输入引用变量名$\{XXX\}。
 
