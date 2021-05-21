@@ -22,13 +22,13 @@ keyword: [微服务, 服务治理, 服务巡检]
 
 4.  在**创建巡检任务**面板中设置相关参数，然后单击**确定**。
 
-    ![dubbo服务巡检](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2905579061/p182409.png)
+    ![dubbo服务巡检](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7919851261/p182409.png)
 
     |参数|描述|
     |--|--|
     |**服务巡检任务名称**|自定义服务巡检任务名称。|
     |**应用**|选择需要巡检的应用。|
-    |**框架类型**|支持Spring Cloud和Dubbo框架。系统会根据所选应用自动识别其框架，也可以手动选择**Dubbo**。|
+    |**框架类型**|支持Spring Cloud、Dubbo和服务网格框架。系统会根据所选应用自动识别其框架，也可以手动选择**Dubbo**。|
     |**服务**|选定应用中需要巡检的目标服务。|
     |**方法**|选定服务中需要巡检的方法。|
     |**请求参数**|设置请求参数。关于Dubbo服务的方法参数类型及配置方式，请参见[Dubbo参考示例](#section_wg1_alf_1dk)。|
