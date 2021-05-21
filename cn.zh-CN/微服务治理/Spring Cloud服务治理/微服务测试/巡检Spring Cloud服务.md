@@ -22,14 +22,14 @@ keyword: [微服务, 服务治理, 服务巡检]
 
 4.  在**创建巡检任务**面板中设置相关参数，然后单击**确定**。
 
-    ![springcloud创建服务巡检任务](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5547579061/p182309.png)
+    ![springcloud创建服务巡检任务](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7588851261/p182309.png)
 
     |参数|描述|
     |--|--|
     |**服务巡检任务名称**|自定义服务巡检任务名称。|
     |**应用**|选择需要巡检的应用。|
-    |**框架类型**|支持Spring Cloud和Dubbo框架。系统会根据所选应用自动识别其框架，也可以手动选择**Spring Cloud**。|
-    |**Path**|设置HTTP相对路径，例如/getIp。|
+    |**框架类型**|支持Spring Cloud、Dubbo和服务网格框架。系统会根据所选应用自动识别其框架，也可以手动选择**Spring Cloud**。|
+    |**Path**|选择HTTP相对路径，例如/getIp。或单击**切换为自定义输入**，手动输入HTTP相对路径。|
     |**基本信息**|设置请求方式，包括GET/POST/PUT/DELETE。**说明：** GET和DELETE只支持修改URL的Path路径。POST和PUT支持ContentType及参数编写格式。 |
     |**请求头**|设置请求头参数信息。关于Spring Cloud微服务支持的ContentType类型，请参见[Spring Cloud参考示例](#section_hdt_8wi_8np)。|
     |**断言信息包含**|设置接口返回值信息。如果返回值含有一个特征，如返回值含有123，则格式为"123"；如果返回值含有多个特征，如同时含有123，abc，则格式为\["123","abc"\]。|
