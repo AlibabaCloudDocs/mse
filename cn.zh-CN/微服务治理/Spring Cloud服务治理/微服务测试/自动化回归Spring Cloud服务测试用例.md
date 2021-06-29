@@ -12,7 +12,7 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 
 
-## 创建SpringCloud测试用例
+## 创建Spring Cloud测试用例
 
 1.  登录[MSE治理中心控制台](https://mse.console.aliyun.com/?spm=a2c4g.11186623.2.13.f90a6a60WiEx0N#/msc/home)。
 
