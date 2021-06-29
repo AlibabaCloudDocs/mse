@@ -61,12 +61,12 @@ keyword: [微服务, 测试用例, 自动化回归]
 
 |脚本字段|字段解析|
 |----|----|
-|info.namespaceId|微服务空间|
-|info.regionId|地域|
-|info.schema|脚本版本号|
-|item\[\]|表示多个测试步骤|
-|item\[0\].name|测试步骤的名称|
-|item\[0\].request.method|请求方法|
+|info.namespaceId|微服务空间。|
+|info.regionId|地域。|
+|info.schema|脚本版本号。|
+|item\[\]|表示多个测试步骤。|
+|item\[0\].name|测试步骤的名称。|
+|item\[0\].request.method|请求方法。|
 |regionId|地域，支持Spring Cloud和Dubbo服务。|
 |appId|应用ID，支持Spring Cloud和Dubbo服务。|
 |appName|应用名称，支持Spring Cloud和Dubbo服务。|
@@ -79,8 +79,7 @@ keyword: [微服务, 测试用例, 自动化回归]
 |method|请求方法，仅支持Spring Cloud服务。|
 |uri|请求路径，仅支持Spring Cloud服务。|
 |item\[0\].request.body|参数基本信息。|
-|contentType|请求头。|
-|mode|根据框架类型和ContentType区分，其中mode有urlencoded和raw两种模式：-   `"mode":"urlencoded"`：当框架类型为Spring Cloud服务时，可选此模式。入参信息填在对应的`urlencoded`中，以`key`和`value`的方式传入，例如：
+|contentType|根据框架类型和ContentType区分，其中mode有urlencoded和raw两种模式：-   `"mode":"urlencoded"`：当框架类型为Spring Cloud服务时，可选此模式。入参信息填在对应的`urlencoded`中，以`key`和`value`的方式传入，例如：
 
     ```
 "urlencoded":[  
@@ -96,9 +95,10 @@ keyword: [微服务, 测试用例, 自动化回归]
     ```
 "raw":"[\"11234\"]"
     ``` |
+|mode|
 |urlencoded|
 |raw|
-|item\[0\].request.header|
+|item\[0\].request.header|请求头。|
 |key|请求头的Key，仅支持Spring Cloud服务。|
 |value|请求头对应的Value值，仅支持Spring Cloud服务。|
 |item\[0\].request.checkpoints|断言。|
