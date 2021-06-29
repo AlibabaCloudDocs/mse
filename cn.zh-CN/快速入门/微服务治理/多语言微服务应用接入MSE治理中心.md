@@ -22,6 +22,8 @@ keyword: [MSE治理中心, 服务网格]
 
 5.  在**功能设置更新**面板单击**展开高级选项**，选中**启用MSE微服务治理组件**，然后单击**确定**。
 
+    ![ASM中安装MSE组件](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1186494261/p290009.png)
+
 
 部署应用后即可在MSE治理中心查看相关的应用数据。
 
