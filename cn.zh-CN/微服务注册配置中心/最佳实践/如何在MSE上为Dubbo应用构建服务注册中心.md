@@ -23,8 +23,8 @@ keyword: [微服务, 服务发现]
 
 **说明：**
 
--   如果您需要的注册中心为ZooKeeper，具体操作请参见[购买并构建ZooKeeper引擎](/cn.zh-CN/快速入门/微服务注册配置中心/购买并构建ZooKeeper引擎.md)。
--   如果您需要的注册中心为Eureka，具体操作请参见[购买并构建Eureka引擎](/cn.zh-CN/快速入门/微服务注册配置中心/购买并构建Eureka引擎.md)。
+-   如果您需要的注册中心为ZooKeeper，具体操作请参见[购买并构建ZooKeeper引擎](/cn.zh-CN/快速入门/微服务注册配置中心/创建ZooKeeper引擎.md)。
+-   如果您需要的注册中心为Eureka，具体操作请参见[购买并构建Eureka引擎](/cn.zh-CN/快速入门/微服务注册配置中心/创建Eureka引擎.md)。
 
 1.  进入MSE实例创建页面。
 
@@ -39,33 +39,31 @@ keyword: [微服务, 服务发现]
         1.  登录[MSE管理控制台](https://mse.console.aliyun.com)。
         2.  在左侧导航栏选择**注册配置中心** \> **实例列表**。
         3.  在实例列表页面单击**创建实例**。
-2.  设置**付费模式**。
+2.  选择**付费模式**。
 
     在MSE购买页面选择付费模式。
 
     MSE有预付费（包年包月）和按量付费（按小时）两种模式，如果您的服务注册中心使用时间在一个月以上，建议采用更加优惠的预付费（包年包月）模式。
 
-3.  设置实例**地域和可用区**。
+3.  选择实例**地域和可用区**。
 
     选择您MSE实例所在地域。
 
-    **说明：** 目前MSE现已开放了**华东1（杭州）**、**华东2（上海）**、**华北2（北京）**、**华南1（深圳）**、**华北3（张家口）**、**华南5（呼和浩特）**、**西南1（成都）**、**中国（香港）**、**新加坡**、**美国（弗吉尼亚）**、**俄罗斯（莫斯科）**、**美国（硅谷）**地域。
+    **说明：** 目前MSE支持的地域，请参见[开服地域](/cn.zh-CN/产品简介/开服地域.md)。
 
 4.  配置引擎基本信息。
 
-    ![Nacos引擎](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5724229061/p176072.png)
+    ![Nacos引擎](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5022205261/p176072.png)
 
     配置基本参数如下：
 
     |参数|描述|
     |--|--|
     |**引擎类型**|选择**Nacos**。 |
-    |**引擎版本**|MSE Nacos支持两种引擎版本，**1.1.3**和**1.2.1**。推荐使用**1.2.1**。
-
-**说明：** 目前仅1.2.1版本支持配置中心，1.1.3不包含配置中心功能。 |
+    |**引擎版本**|MSE Nacos支持两种引擎版本，基础版支持**1.2.1**，专业版支持**2.0.0**。推荐使用专业版**2.0.0**。 |
     |**引擎规格**|MSE实例规格有四种规格，**1核2G**、**2核4G**、**4核8G**和**8核16G**。
 
-请您根据实际情况选择合适的组件规格，关于组件的评估方法，请参见[微服务注册配置中心实例能力评估](/cn.zh-CN/产品定价/微服务注册配置中心/微服务注册配置中心实例能力评估.md)。 |
+请您根据实际情况选择合适的组件规格，关于组件的评估方法，请参见[微服务注册配置中心实例能力评估](/cn.zh-CN/产品计费/微服务注册配置中心/微服务注册配置中心实例能力评估.md)。 |
     |**集群节点数**|选择集群内的节点数，即一个集群需要多少台上述规格的节点组成。
 
 **说明：** 强烈建议Nacos集群规模最小3个节点，否则无法保障高可用。 |
@@ -94,12 +92,12 @@ keyword: [微服务, 服务发现]
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.7.3</version>
+                <version>2.7.9</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
-                <version>1.1.1</version>
+                <version>1.4.2</version>
             </dependency>
         </dependencies>            
         ```
@@ -164,11 +162,13 @@ keyword: [微服务, 服务发现]
         <dubbo:registry address="nacos://mse.XX.nacos.mse.aliyuncs.com:8848" />                                
         ```
 
+        **说明：** 若您选择使用公网域名，请清空白名单。相关操作，请参见[设置白名单](/cn.zh-CN/微服务注册配置中心/Nacos/设置白名单.md)。
+
         其中`mse.XX.nacos.mse.aliyuncs.com`为在MSE上传创建的Nacos的外网访问地址，如下图所示。
 
         ![在MSE创建Nacos完成](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6776076951/p69536.png)
 
-        **说明：** 如果您使用的服务注册中心是MSE的Zookeeper，那么您需要将本步骤的注册中心代码换成Zookeeper相应的代码，具体代码详情请参见[MSE微服务注册配置中心使用说明](/cn.zh-CN/快速入门/微服务注册配置中心/MSE微服务注册配置中心使用说明.md)。
+        **说明：** 如果您使用的服务注册中心是MSE的Zookeeper，那么您需要将本步骤的注册中心代码换成Zookeeper相应的代码，具体代码详情请参见[微服务注册配置中心使用说明](/cn.zh-CN/快速入门/微服务注册配置中心/微服务注册配置中心使用说明.md)。
 
 4.  启动服务。
 
@@ -222,12 +222,12 @@ keyword: [微服务, 服务发现]
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.7.3</version>
+                <version>2.7.9</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
-                <version>1.1.1</version>
+                <version>1.4.2</version>
             </dependency>
         </dependencies>            
         ```
